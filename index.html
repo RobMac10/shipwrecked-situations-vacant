@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Situations Vacant · Shipwrecked on Ancient Ground</title>
+<meta name="description" content="Period job advertisements for the characters in Shipwrecked on Ancient Ground, with what each job really involved.">
+<style>
+:root{--paper:#f1e6cc;--ink:#231a10;--rule:#5b4a33;--red:#7a1f12}
+*{box-sizing:border-box}
+body{margin:0;background:#d9c9a3;color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.5}
+.sheet{max-width:1200px;margin:0 auto;background:var(--paper);background-image:radial-gradient(circle at 20% 10%,rgba(255,255,255,.35),transparent 60%),radial-gradient(circle at 80% 90%,rgba(120,80,30,.12),transparent 60%);padding:16px 14px 40px;min-height:100vh;box-shadow:0 0 30px rgba(0,0,0,.25)}
+header{text-align:center;border-bottom:4px double var(--rule);padding-bottom:10px}
+.mast{font-family:"Old English Text MT","UnifrakturCook",Georgia,serif;font-size:clamp(28px,8vw,62px);margin:4px 0;letter-spacing:1px}
+.dateline{display:flex;justify-content:space-between;font-size:12px;text-transform:uppercase;letter-spacing:1px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:3px 0;margin-top:6px}
+h2.section{text-align:center;font-size:clamp(22px,6vw,36px);letter-spacing:4px;margin:18px 0 4px;text-transform:uppercase}
+.intro{max-width:720px;margin:0 auto 14px;text-align:center;font-size:15px}
+.board{display:grid;grid-template-columns:1fr;gap:18px}
+@media(min-width:760px){.board{grid-template-columns:1fr 1fr;column-gap:0}.board>.card{padding:0 14px}.board>.card:nth-child(odd){border-right:1px solid var(--rule)}}
+@media(min-width:1100px){.board{grid-template-columns:1fr 1fr 1fr}.board>.card:nth-child(odd){border-right:none}.board>.card:not(:nth-child(3n)){border-right:1px solid var(--rule)}}
+.who{font-size:12px;text-transform:uppercase;letter-spacing:2px;text-align:center;border-bottom:1px solid var(--rule);margin-bottom:6px;color:var(--red)}
+.flip{perspective:1600px}
+.inner{display:grid;transition:transform .7s cubic-bezier(.3,.7,.3,1);transform-style:preserve-3d}
+.flip.on .inner{transform:rotateY(180deg)}
+.face{grid-area:1/1;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:var(--paper);border:1px solid var(--rule);padding:12px 14px}
+.back{transform:rotateY(180deg);background:#efe2c4}
+@media(prefers-reduced-motion:reduce){.inner{transition:none}}
+.ad h3{font-size:22px;text-align:center;text-transform:uppercase;letter-spacing:2px;margin:4px 0;border-bottom:1px solid var(--rule);padding-bottom:4px}
+.ad .sub{text-align:center;font-style:italic;font-size:14px;margin:2px 0 8px}
+.ad dl{margin:0;font-size:15px}.ad dt{font-weight:bold;font-variant:small-caps;letter-spacing:1px}.ad dd{margin:0 0 6px}
+.label{display:inline-block;font-size:11px;letter-spacing:1px;text-transform:uppercase;border:1px solid var(--red);color:var(--red);padding:1px 6px;margin:4px 0}
+figure{margin:8px 0}figure img{width:100%;height:auto;display:block;filter:sepia(.35) contrast(1.05);border:1px solid var(--rule)}
+figcaption{font-size:12px;font-style:italic}
+.src{font-size:12.5px;border-top:1px dashed var(--rule);margin-top:8px;padding-top:6px}
+.src ol{padding-left:18px;margin:4px 0}
+a{color:var(--red)}
+.back h4{margin:2px 0 6px;font-size:18px;text-transform:uppercase;letter-spacing:1px;text-align:center}
+blockquote{margin:6px 0 8px;padding-left:10px;border-left:3px solid var(--rule);font-style:italic}
+.check{background:#f7d98b;padding:0 3px;font-style:normal;font-size:13px}
+button.turn{display:block;width:100%;margin-top:10px;padding:10px;font:inherit;font-size:14px;letter-spacing:2px;text-transform:uppercase;background:var(--ink);color:var(--paper);border:0;cursor:pointer}
+button.turn:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.chapter{font-size:14px;margin-top:8px;font-weight:bold}
+.care{border:1px solid var(--rule);padding:8px 10px;font-size:14px;margin:0 0 8px;background:#efe2c4}
+footer{margin-top:28px;border-top:4px double var(--rule);padding-top:10px;font-size:13px;text-align:center}
+</style></head><body><div class="sheet">
+<header>
+<div class="mast">Situations Vacant</div>
+<div style="font-style:italic;font-size:14px">A companion to <em>Shipwrecked on Ancient Ground</em></div>
+<div class="dateline"><span>Trieste · Ballarat · Port Curtis</span><span>1840s–1860s</span></div>
+</header>
+<h2 class="section">Notices</h2>
+<p class="intro">Six jobs held by the three people in the story. Each notice shows the job as it was offered. Turn the notice over to read what the job really involved, from the records. Wages and rules come from real documents. A notice marked <strong>Composite</strong> was put together from several sources because no single real advertisement has been found.</p>
+<main class="board" id="board"></main>
+<footer>
+<p><a href="https://robmac10.github.io/shipwrecked-on-ancient-ground-reader/">Read the novel</a></p>
+<p>Images: Rijksmuseum (via Wikimedia Commons, CC0); S. T. Gill and J. B. Henderson watercolours (Wikimedia Commons, public domain). Wages, rules and quotes are taken from the sources listed under each notice. Items marked <span class="check">[CHECK]</span> are not yet confirmed.</p>
+</footer>
+</div>
+<script src="ads.js"></script>
+</body></html>
